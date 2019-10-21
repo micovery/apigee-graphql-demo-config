@@ -1,0 +1,23 @@
+[
+  {
+    "attributes": [],
+    "email": "graphql.service@example.com",
+    "firstName": "Service",
+    "lastName": "Account",
+    "userName": "graphql-service-account"
+  },
+  {
+    "attributes": [],
+    "email": "milesm@example.com",
+    "firstName": "Miles",
+    "lastName": "Morales",
+    "userName": "milesmorales"
+  },
+  {
+    "attributes": [],
+    "email": "peterp@example.com",
+    "firstName": "Peter",
+    "lastName": "Parker",
+    "userName": "peterparker"
+  }
+]

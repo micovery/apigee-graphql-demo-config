@@ -1,0 +1,108 @@
+[
+  {
+    "name": "graphql-bronze",
+    "displayName": "GraphQL Bronze",
+    "description": "Limited Access to GraphQL",
+    "apiResources": [
+      "/"
+    ],
+    "approvalType": "auto",
+    "attributes": [
+      {
+        "name": "developer.quota.limit",
+        "value": "100"
+      },
+      {
+        "name": "developer.quota.interval",
+        "value": "1"
+      },
+      {
+        "name": "developer.quota.timeunit",
+        "value": "hour"
+      }
+    ],
+    "environments": [
+      "test"
+    ],
+    "proxies": [
+      "graphql-proxy",
+      "graphql-oauth"
+    ],
+    "quota": "100",
+    "quotaInterval": "1",
+    "quotaTimeUnit": "hour",
+    "scopes": ["reader", "resort:manager", "resort:admin", "instrospect"]
+  },
+  {
+    "name": "graphql-platinum",
+    "displayName": "GraphQL Platinum",
+    "description": "Unlimited Access to GraphQL",
+    "apiResources": [
+      "/"
+    ],
+    "approvalType": "manual",
+    "attributes": [
+    ],
+    "environments": [
+      "test"
+    ],
+    "proxies": [
+      "graphql-proxy",
+      "graphql-oauth"
+    ],
+    "scopes": ["reader", "resort:manager", "resort:admin", "instrospect"]
+  },
+  {
+    "name": "graphql-admin",
+    "displayName": "GraphQL Admin",
+    "description": "This product is used for admin apps. ",
+    "apiResources": [
+      "/"
+    ],
+    "approvalType": "auto",
+    "attributes": [
+    ],
+    "environments": [
+      "test"
+    ],
+    "proxies": [
+      "graphql-proxy",
+      "graphql-oauth"
+    ],
+    "scopes": ["site:admin", "instrospect"]
+  },
+  {
+    "name": "graphql-playground",
+    "displayName": "GraphQL Playground",
+    "description": "Product for use only by the GraphQL Playground app",
+    "apiResources": [
+      "/"
+    ],
+    "approvalType": "auto",
+    "attributes": [
+      {
+        "name": "developer.quota.limit",
+        "value": "50"
+      },
+      {
+        "name": "developer.quota.interval",
+        "value": "1"
+      },
+      {
+        "name": "developer.quota.timeunit",
+        "value": "hour"
+      }
+    ],
+    "environments": [
+      "test"
+    ],
+    "proxies": [
+      "graphql-proxy",
+      "graphql-oauth"
+    ],
+    "quota": "50",
+    "quotaInterval": "1",
+    "quotaTimeUnit": "hour",
+    "scopes": ["reader", "instrospect"]
+  }
+]

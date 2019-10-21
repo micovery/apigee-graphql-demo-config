@@ -1,0 +1,30 @@
+{
+  "peterp@example.com": [
+    {
+      "apiProducts": [
+        "graphql-bronze"
+      ],
+      "callbackUrl": "http://example.com",
+      "name": "graphql-peter-app",
+      "scopes": []
+    }
+  ],
+  "graphql.service@example.com": [
+    {
+      "apiProducts": [
+        "graphql-playground"
+      ],
+      "callbackUrl": "http://example.com",
+      "name": "graphql-playground-app",
+      "scopes": []
+    },
+    {
+      "apiProducts": [
+        "graphql-admin"
+      ],
+      "callbackUrl": "http://example.com",
+      "name": "graphql-admin-app",
+      "scopes": []
+    }
+  ]
+}
