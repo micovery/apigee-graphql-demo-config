@@ -18,10 +18,12 @@ The repo makes use of the [Apigee maven config plugin](https://github.com/apigee
 To deploy the config assets run the following command:
 
 ```bash
-mvn install -Ptest \
-    -Dusername=$APIGEE_USERNAME \
-    -Dpassword=$APIGEE_PASSWORD \
-    -Dorg=$APIGEE_ORG
+    mvn -ntp install \
+        -Ptest \
+        -Dapigee.username=${APIGEE_USERNAME} \
+        -Dapigee.password=${APIGEE_PASSWORD} \
+        -Dapigee.org=${APIGEE_ORG} \
+        -Dapigee.env=${APIGEE_ENV}
 ```
 This will deploy the configuration assets to the specified $APIGEE_ORG organization under the `test` environment.
 
