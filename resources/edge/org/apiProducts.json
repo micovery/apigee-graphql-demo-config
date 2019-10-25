@@ -22,7 +22,7 @@
       }
     ],
     "environments": [
-      "test"
+      "${apigee.env}"
     ],
     "proxies": [
       "graphql-proxy",
@@ -44,7 +44,7 @@
     "attributes": [
     ],
     "environments": [
-      "test"
+      "${apigee.env}"
     ],
     "proxies": [
       "graphql-proxy",
@@ -63,7 +63,7 @@
     "attributes": [
     ],
     "environments": [
-      "test"
+      "${apigee.env}"
     ],
     "proxies": [
       "graphql-proxy",
@@ -94,7 +94,7 @@
       }
     ],
     "environments": [
-      "test"
+      "${apigee.env}"
     ],
     "proxies": [
       "graphql-proxy",
